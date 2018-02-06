@@ -75,11 +75,9 @@
     <div>
         <script>
         // Display the square numbers up to 100. (1, 4, 9, ..., 81, 100)//
-        while(num<=100){
-            (let i=0; i<=100; i++){
-                document.write((i*i) + ", ");
-            }
-        }
+            for(let i=0; i<=100; i++){
+                document.write((i*i) + ", ");   
+            }  
         </script>
     </div>
 
@@ -108,7 +106,7 @@
     <div>
         <script>
         // Display the odd numbers from 20 to 1, counting backwards. (19, 17, 15, ..., 3, 1)//
-        for(let let i=20; i>0; i--){
+        for(let i=20; i>0; i--){
             if(i%2!==0){
                 document.write(i + ", ");
             }       
