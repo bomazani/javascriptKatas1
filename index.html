@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -249,35 +249,10 @@
 
         <div>
             <h3>19. Display 20 solid gray rectangles, each 20px high and 100px wide.</h3>
-            <style>
-                .bar {background: gray; height: 20px; margin: 10px; color: white;}
-            </style>
-
-            <div>
-            <h1>Adding content with document.createElement</h1>
-            <div id="d1"></div>
-            <script>
-                for(i=1; i<=3; i++) {
-                // Create a div, with class "bar", and set the width to 100px.
-                var newElement = document.createElement("div");
-                newElement.className = "bar";
-                newElement.style.width = i*100 + "px";
-
-                // Place a text label inside the new div.
-                var newText = document.createTextNode("Bar #" + i);
-                newElement.appendChild(newText);
-
-                // Put the new div on the page inside the existing element "d1".
-                var destination = document.getElementById("d1");
-                destination.appendChild(newElement);
-
-                }
-            </script>
-            </div>
-
-
+                <div>
+                    
+                </div>
         </div>
-
 
             <h3>20. Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above).</h3>
             //Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above). //
