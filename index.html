@@ -263,7 +263,7 @@
                             // Add text into the new element //
                             var newText = document.createTextNode("  :)");
                             newElement.appendChild(newText);
-                            // Put the new div on the page inside the existing element "d1".
+                            // Put the new div on the page inside the existing element "d2".
                             var destination = document.getElementById("d2");
                             destination.appendChild(newElement);
                         }
@@ -277,10 +277,12 @@
             <div>
                 <div id="d3"></div>
                     <script>
-                        // loop: variable starting point; number of loops; increase variable //
+                        // Create variable "wide" & assign starting value of 100 //
                         let wide = 100;
+                        // loop: variable starting point; number of loops; increase variable //
                         for(i=1; i<=20; i++) {
-                            wide = wide + 5;
+                            // increase var wide by 5 for each loop //
+                            let wide = wide + 5;
                             // Creates new variable named "newElement" //
                             var newElement = document.createElement("div");
                             // Equivalent of <div class = "Bar" ></div> //
@@ -290,7 +292,7 @@
                             // Add text into the new element //
                             var newText = document.createTextNode("  :)");
                             newElement.appendChild(newText);
-                            // Put the new div on the page inside the existing element "d1".
+                            // Put the new div on the page inside the existing element "d3".
                             var destination = document.getElementById("d3");
                             destination.appendChild(newElement);
                         }
@@ -305,12 +307,13 @@
                         <script>
                             // loop: variable starting point; number of loops; increase variable //
                             for(i=1; i<=20; i++) {
-                                wide = sampleArray[i];
+                                // Creates new variable "wide" & assigns it the value of the element in position [i] within sampleArray //
+                                let wide = sampleArray[i];
                                 // Creates new variable named "newElement" //
                                 var newElement = document.createElement("div");
                                 // Equivalent of <div class = "Bar" ></div> //
                                 newElement.className = "bar";
-                                // assign width to newElement //
+                                // assign width to newElement using the value of "wide" //
                                 newElement.style.width = (wide + "px");
                                 // Add text into the new element //
                                 var newText = document.createTextNode("  :)");
@@ -329,13 +332,15 @@
                         <script>
                             // loop: variable starting point; number of loops; increase variable //
                             for(i=1; i<=20; i++) {
+                                // Creates new variable "wide" & assigns it the value of the element in position [i] within sampleArray //
                                 wide = sampleArray[i];
                                 // Creates new variable named "newElement" //
                                 var newElement = document.createElement("div");
                                 // Equivalent of <div class = "Bar" ></div> //
                                 newElement.className = "bar";
-                                // assign width to newElement //
+                                // assign width to newElement using the value of "wide" //
                                 newElement.style.width = (wide + "px");
+                                // if loop tests if i is even. if true: assigns background-color of red //
                                 if(i%2==0){
                                     newElement.style.backgroundColor = ("red");
                                 }
@@ -356,6 +361,7 @@
                         <script>
                             // loop: variable starting point; number of loops; increase variable //
                             for(i=1; i<=20; i++) {
+                                // Creates new variable "wide" & assigns it the value of the element in position [i] within sampleArray //
                                 wide = sampleArray[i];
                                 // Creates new variable named "newElement" //
                                 var newElement = document.createElement("div");
@@ -363,6 +369,7 @@
                                 newElement.className = "bar";
                                 // assign width to newElement //
                                 newElement.style.width = (wide + "px");
+                                // if loop tests if "wide" is even. if true: assigns background-color of red //
                                 if(wide%2==0){
                                     newElement.style.backgroundColor = ("red");
                                 }
