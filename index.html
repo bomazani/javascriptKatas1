@@ -250,23 +250,131 @@
         <div>
             <h3>19. Display 20 solid gray rectangles, each 20px high and 100px wide.</h3>
                 <div>
-                    
+                    <div id="d2"></div>
+                    <script>
+                        // loop: variable starting point; number of loops; increase variable //
+                        for(i=1; i<=20; i++) {
+                            // Creates new variable named "newElement" //
+                            var newElement = document.createElement("div");
+                            // Equivalent of <div class = "Bar" ></div> //
+                            newElement.className = "bar";
+                            // assign width to newElement //
+                            newElement.style.width = 20 + "px";
+                            // Add text into the new element //
+                            var newText = document.createTextNode("  :)");
+                            newElement.appendChild(newText);
+                            // Put the new div on the page inside the existing element "d1".
+                            var destination = document.getElementById("d2");
+                            destination.appendChild(newElement);
+                        }
+
+                    </script>  
                 </div>
         </div>
 
             <h3>20. Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above).</h3>
             //Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above). //
-       
+            <div>
+                <div id="d3"></div>
+                    <script>
+                        // loop: variable starting point; number of loops; increase variable //
+                        let wide = 100;
+                        for(i=1; i<=20; i++) {
+                            wide = wide + 5;
+                            // Creates new variable named "newElement" //
+                            var newElement = document.createElement("div");
+                            // Equivalent of <div class = "Bar" ></div> //
+                            newElement.className = "bar";
+                            // assign width to newElement //
+                            newElement.style.width = (wide + "px");
+                            // Add text into the new element //
+                            var newText = document.createTextNode("  :)");
+                            newElement.appendChild(newText);
+                            // Put the new div on the page inside the existing element "d1".
+                            var destination = document.getElementById("d3");
+                            destination.appendChild(newElement);
+                        }
+
+                    </script>  
+                </div>
+              
             <h3>21. Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.</h3>
             //Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray. //
-            
+            <div>
+                    <div id="d4"></div>
+                        <script>
+                            // loop: variable starting point; number of loops; increase variable //
+                            for(i=1; i<=20; i++) {
+                                wide = sampleArray[i];
+                                // Creates new variable named "newElement" //
+                                var newElement = document.createElement("div");
+                                // Equivalent of <div class = "Bar" ></div> //
+                                newElement.className = "bar";
+                                // assign width to newElement //
+                                newElement.style.width = (wide + "px");
+                                // Add text into the new element //
+                                var newText = document.createTextNode("  :)");
+                                newElement.appendChild(newText);
+                                // Put the new div on the page inside the existing element "d1".
+                                var destination = document.getElementById("d4");
+                                destination.appendChild(newElement);
+                            }
+                        </script>  
+                    </div>
       
             <h3>22. As in #21, but alternate colors so that every other rectangle is red.</h3>
             // As in #21, but alternate colors so that every other rectangle is red.//
-            
+            <div>
+                    <div id="d5"></div>
+                        <script>
+                            // loop: variable starting point; number of loops; increase variable //
+                            for(i=1; i<=20; i++) {
+                                wide = sampleArray[i];
+                                // Creates new variable named "newElement" //
+                                var newElement = document.createElement("div");
+                                // Equivalent of <div class = "Bar" ></div> //
+                                newElement.className = "bar";
+                                // assign width to newElement //
+                                newElement.style.width = (wide + "px");
+                                if(i%2==0){
+                                    newElement.style.backgroundColor = ("red");
+                                }
+                                // Add text into the new element //
+                                var newText = document.createTextNode("  :)");
+                                newElement.appendChild(newText);
+                                // Put the new div on the page inside the existing element "d1".
+                                var destination = document.getElementById("d5");
+                                destination.appendChild(newElement);
+                            }
+                        </script>  
+                    </div>
     
             <h3>23. As in #21, but color the rectangles with even widths red.</h3>
             // As in #21, but color the rectangles with even widths red. //
+            <div>
+                    <div id="d6"></div>
+                        <script>
+                            // loop: variable starting point; number of loops; increase variable //
+                            for(i=1; i<=20; i++) {
+                                wide = sampleArray[i];
+                                // Creates new variable named "newElement" //
+                                var newElement = document.createElement("div");
+                                // Equivalent of <div class = "Bar" ></div> //
+                                newElement.className = "bar";
+                                // assign width to newElement //
+                                newElement.style.width = (wide + "px");
+                                if(wide%2==0){
+                                    newElement.style.backgroundColor = ("red");
+                                }
+                                // Add text into the new element //
+                                var newText = document.createTextNode("  :)");
+                                newElement.appendChild(newText);
+                                // Put the new div on the page inside the existing element "d1".
+                                var destination = document.getElementById("d6");
+                                destination.appendChild(newElement);
+                            }
+                        </script>  
+                    </div>
           
         //Bonus: If you would like an additional challenge, try completing each of the above again without using any for or while loops.//
         
